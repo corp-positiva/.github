@@ -1,6 +1,6 @@
 blank_issues_enabled: false
 contact_links:
   - name: "TECH-STANDARDS.md — Estándares globales"
-    url: ver repo: org-doc-gov-ext-tech-standards y REDME principal de la Organización 
+    url: ver repo: org-doc-gov-ext-tech-standards y README principal de la Organización 
     about: "Convenciones de código, Docker, Terraform y proceso de entrega. Leer antes de tomar cualquier issue."
 
