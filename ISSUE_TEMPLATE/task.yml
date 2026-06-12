@@ -120,3 +120,5 @@ body:
         - label: "He dejado un comentario con mi estimación y posibles bloqueos"
     validations:
       required: false
+
+      
