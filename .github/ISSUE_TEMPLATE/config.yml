@@ -1,6 +1,6 @@
 blank_issues_enabled: false
 contact_links:
-  - name: GitHub Community Support
-    url: https://github.com/orgs/community/discussions
-    about: Please ask and answer questions here.
+  - name: "TECH-STANDARDS.md — Estándares globales"
+    url: ver repo: org-doc-gov-ext-tech-standards y REDME principal de la Organización 
+    about: "Convenciones de código, Docker, Terraform y proceso de entrega. Leer antes de tomar cualquier issue."
 
