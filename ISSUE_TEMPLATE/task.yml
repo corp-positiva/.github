@@ -13,7 +13,7 @@ body:
         | Documento | Contenido |
         |---|---|
         | 📄 **[development_specifications.md](../blob/main/docs/dev/development_specifications.md)** | Especificaciones técnicas completas de este proyecto |
-        | 📋 **[TECH-STANDARDS.md](https://raw.githubusercontent.com/corp-positiva/org-doc-gov-ext-tech-standards/refs/heads/main/README.md?token=GHSAT0AAAAAAD7UCLRNDIZLJ5ZYSBMAVZDC2RLG6BQ)** | Estándares globales de código, Docker, Terraform y entrega |
+        | 📋 **[TECH-STANDARDS.md](URL_REPO)** | Estándares globales de código, Docker, Terraform y entrega |
 
   - type: dropdown
     id: spec_section
