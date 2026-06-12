@@ -4,138 +4,118 @@ title: "[TIPO] Descripción breve"
 labels: []
 assignees: []
 
-
-
 body:
   - type: markdown
-    attributes:
-      value: |
-        ## Antes de comenzar
-        Leer los dos documentos de referencia para esta tarea:
-        | Documento | Contenido |
-        |---|---|
-        | 📄 **development_specifications** | Especificaciones técnicas completas de este proyecto |
-        | 📋 **TECH-STANDARDS** | Estándares globales de código, Docker, Terraform y entrega |
-
-
+    attributes:
+      value: |
+        ## Antes de comenzar
+        Leer los dos documentos de referencia para esta tarea:
+        | Documento | Contenido |
+        |---|---|
+        | 📄 **[development_specifications.md](../blob/main/docs/dev/development_specifications.md)** | Especificaciones técnicas completas de este proyecto |
+        | 📋 **[TECH-STANDARDS.md](URL_TECH_STANDARDS)** | Estándares globales de código, Docker, Terraform y entrega |
 
   - type: dropdown
-    id: spec_section
-    attributes:
-      label: "Sección del spec que cubre esta tarea"
-      description: "Sección de development_specifications.md que corresponde a este issue."
-      options:
-        - "§2 — Alcance funcional (general)"
-        - "§3.1 — Módulo secrets"
-        - "§3.2 — Módulo storage"
-        - "§3.3 — Módulo bigquery"
-        - "§3.4 — Módulo logging"
-        - "§5 — Estructura del proyecto"
-        - "§6 — Dependencias y pyproject.toml"
-        - "§7 — Empaquetado y Artifact Registry"
-        - "§8 — Estándares de calidad y tests"
-        - "§11 — Pipeline CI/CD"
-        - "Múltiple (especificar en alcance)"
-    validations:
-      required: true
-
-
+    id: spec_section
+    attributes:
+      label: "Sección del spec que cubre esta tarea"
+      description: "Sección de development_specifications.md que corresponde a este issue."
+      options:
+        - "§2 — Alcance funcional (general)"
+        - "§3.1 — Módulo secrets"
+        - "§3.2 — Módulo storage"
+        - "§3.3 — Módulo bigquery"
+        - "§3.4 — Módulo logging"
+        - "§5 — Estructura del proyecto"
+        - "§6 — Dependencias y pyproject.toml"
+        - "§7 — Empaquetado y Artifact Registry"
+        - "§8 — Estándares de calidad y tests"
+        - "§11 — Pipeline CI/CD"
+        - "Múltiple (especificar en alcance)"
+    validations:
+      required: true
 
   - type: textarea
-    id: scope
-    attributes:
-      label: "Alcance específico de esta tarea"
-      description: "Qué parte concreta del spec se implementa aquí. Puede diferir o acotar lo que dice el spec si es una entrega parcial."
-      placeholder: |
-        Implementar únicamente el cliente `SecretManagerClient` con caché en memoria
-        y TTL configurable. No incluye el método `refresh_all()` en esta entrega.
-    validations:
-      required: true
-
-
+    id: scope
+    attributes:
+      label: "Alcance específico de esta tarea"
+      description: "Qué parte concreta del spec se implementa aquí. Puede diferir o acotar lo que dice el spec si es una entrega parcial."
+      placeholder: |
+        Implementar únicamente el cliente `SecretManagerClient` con caché en memoria
+        y TTL configurable. No incluye el método `refresh_all()` en esta entrega.
+    validations:
+      required: true
 
   - type: textarea
-    id: acceptance_criteria
-    attributes:
-      label: "Criterios de aceptación"
-      description: "Condiciones verificables y específicas para esta tarea. Complementan o acotan los criterios del spec."
-      value: |
-        - [ ] 
-        - [ ] 
-        - [ ] 
-    validations:
-      required: true
-
-
+    id: acceptance_criteria
+    attributes:
+      label: "Criterios de aceptación"
+      description: "Condiciones verificables y específicas para esta tarea. Complementan o acotan los criterios del spec."
+      value: |
+        - [ ] 
+        - [ ] 
+        - [ ] 
+    validations:
+      required: true
 
   - type: textarea
-    id: out_of_scope
-    attributes:
-      label: "Fuera de alcance (opcional)"
-      description: "Qué partes del spec quedan explícitamente excluidas de esta tarea para evitar ambigüedad."
-      placeholder: |
-        - Tests de integración (se entregan en issue separado #N)
-        - Módulo bigquery (issue #N)
-    validations:
-      required: false
-
-
+    id: out_of_scope
+    attributes:
+      label: "Fuera de alcance (opcional)"
+      description: "Qué partes del spec quedan explícitamente excluidas de esta tarea para evitar ambigüedad."
+      placeholder: |
+        - Tests de integración (se entregan en issue separado #N)
+        - Módulo bigquery (issue #N)
+    validations:
+      required: false
 
   - type: dropdown
-    id: priority
-    attributes:
-      label: "Prioridad"
-      options:
-        - "Alta — bloquea otras tareas o tiene fecha límite"
-        - "Media — importante pero no urgente"
-        - "Baja — mejora o nice-to-have"
-    validations:
-      required: true
-
-
+    id: priority
+    attributes:
+      label: "Prioridad"
+      options:
+        - "Alta — bloquea otras tareas o tiene fecha límite"
+        - "Media — importante pero no urgente"
+        - "Baja — mejora o nice-to-have"
+    validations:
+      required: true
 
   - type: input
-    id: estimation
-    attributes:
-      label: "Estimación"
-      placeholder: "ej: 4–6 horas"
-    validations:
-      required: false
-
-
+    id: estimation
+    attributes:
+      label: "Estimación"
+      placeholder: "ej: 4–6 horas"
+    validations:
+      required: false
 
   - type: textarea
-    id: dependencies
-    attributes:
-      label: "Dependencias con otros issues (opcional)"
-      description: "Issues que deben estar completos antes de comenzar esta tarea."
-      placeholder: "Requiere: #12 (estructura base del repo) · Bloquea: #15 (módulo storage)"
-    validations:
-      required: false
-
-
+    id: dependencies
+    attributes:
+      label: "Dependencias con otros issues (opcional)"
+      description: "Issues que deben estar completos antes de comenzar esta tarea."
+      placeholder: "Requiere: #12 (estructura base del repo) · Bloquea: #15 (módulo storage)"
+    validations:
+      required: false
 
   - type: textarea
-    id: notes
-    attributes:
-      label: "Notas adicionales para el desarrollador (opcional)"
-      description: "Decisiones de diseño, restricciones o contexto que no está en el spec y que el dev necesita saber."
-      placeholder: |
-        Usar `cachetools.TTLCache` en lugar de implementar el caché manualmente.
-        El cliente de Secret Manager debe mockearse con `unittest.mock.patch`.
-    validations:
-      required: false
-
-
+    id: notes
+    attributes:
+      label: "Notas adicionales para el desarrollador (opcional)"
+      description: "Decisiones de diseño, restricciones o contexto que no está en el spec y que el dev necesita saber."
+      placeholder: |
+        Usar `cachetools.TTLCache` en lugar de implementar el caché manualmente.
+        El cliente de Secret Manager debe mockearse con `unittest.mock.patch`.
+    validations:
+      required: false
 
   - type: checkboxes
-    id: dev_confirmation
-    attributes:
-      label: "Confirmación del desarrollador (completar al tomar el issue)"
-      options:
-        - label: "He leído development_specifications.md completo"
-          required: true
-        - label: "He leído TECH-STANDARDS.md completo"
-          required: true
-        - label: "He dejado un comentario con mi estimación y posibles bloqueos"
-          required: false
+    id: dev_confirmation
+    attributes:
+      label: "Confirmación del desarrollador (completar al tomar el issue)"
+      options:
+        - label: "He leído development_specifications.md completo"
+          required: true
+        - label: "He leído TECH-STANDARDS.md completo"
+          required: true
+        - label: "He dejado un comentario con mi estimación y posibles bloqueos"
+          required: false
