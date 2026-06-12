@@ -12,7 +12,7 @@ body:
         Leer los dos documentos de referencia para esta tarea:
         | Documento | Contenido |
         |---|---|
-        | 📄 **[development_specifications.md](../blob/main/docs/dev/development_specifications.md)** | Especificaciones técnicas completas de este proyecto |
+        | 📄 **[development_specifications.md](URL_DEV_ESP)** | Especificaciones técnicas completas de este proyecto |
         | 📋 **[TECH-STANDARDS.md](URL_REPO)** | Estándares globales de código, Docker, Terraform y entrega |
 
   - type: dropdown
